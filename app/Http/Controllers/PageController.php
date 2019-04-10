@@ -60,10 +60,10 @@ return view('customer.page.contact');
 }
 public function postlienhe()
 {
-   $data = ['name'=>"ten"];
-   Mail::send('email',$data,function($msg){
+$data = ['name'=>'ten'];
+    Mail::send('email', $data, function($msg){
        $msg->from('bichdanh1004@gmail.com','danh');
-       $msg->to('bichdanh1004@gmail.com','lan')->subject('mail danh');
+       $msg->to('bichdanh1004@gmail.com','danh')->subject('mail danh');
    });
 }
 }

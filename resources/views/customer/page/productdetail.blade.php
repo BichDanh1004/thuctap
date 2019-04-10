@@ -62,7 +62,7 @@
 						<h4>Mô Tả</h4>
 
 						<div class="panel" id="tab-description" style="display: block;">
-							<p>{{!! $product->description !!}}</p>
+							<p>{!! $product->description !!}</p>
 						</div>		
 					</div>
 				</div>

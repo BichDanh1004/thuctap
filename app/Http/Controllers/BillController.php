@@ -72,7 +72,7 @@ class BillController extends Controller
             $msg->to('bichdanh1004@gmail.com','Diamond')->subject('Diamond');
         });
         Session::forget('cart');
-        return redirect()->back()->with('message', 'Mua hàng thành công');
+        return redirect()->back()->with('message', 'Mua hàng thành công, Vui lòng kiểm tra email của bạn');
     }
 
     public function index()

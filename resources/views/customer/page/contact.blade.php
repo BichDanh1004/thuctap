@@ -27,9 +27,8 @@
     </div>
     <div class="row">
         <div class="col-md-6 col-12 mb-5">
-            <form action="{!! url('lien-he') !!}" method="POST">
-                {{csrf_field()}}
-                <input type="hidden" name="_method" value="POST" />
+            <form action="{!! url('lien-he') !!}" method="post">
+                <input type="hidden" name="_token" value="{!! csrf_token() !!}" />
             <div class="d-flex flex-column"> 
                 <div class="Bill_form-block">
                     <label for="name"> Họ tên*: </label>
